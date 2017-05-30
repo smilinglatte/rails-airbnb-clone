@@ -2,6 +2,9 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+# #
+#   studios = Studio.create([{ Title: 'Woodwork Studio' }, { adress: 'Brussels' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+studios = %w(Woodwork Silkscreen Painter)
+studios.each { |studio| Studio.create(title: studio) }
