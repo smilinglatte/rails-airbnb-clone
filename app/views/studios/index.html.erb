@@ -1,0 +1,10 @@
+<h1>STUDIOS</h1>
+
+<ul>
+  <% @studios.each do |studio| %>
+    <li><%= link_to studio.title, studio_path(studio) %></li>
+     <li><%= link_to studio.adress, studio_path(studio) %></li>
+  <% end %>
+</ul>
+
+

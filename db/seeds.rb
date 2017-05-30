@@ -8,5 +8,5 @@
 
 studios = %w(Woodwork Silkscreen Painter)
 studios.each do |studio|
-  Studio.create(title: studio.to_s)
+  Studio.create(title: studio, user_id: 1)
 end
