@@ -7,4 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 studios = %w(Woodwork Silkscreen Painter)
-studios.each { |studio| Studio.create(title: studio) }
+studios.each do |studio|
+  Studio.create(title: studio.to_s)
+end
