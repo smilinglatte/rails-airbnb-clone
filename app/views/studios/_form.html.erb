@@ -1,0 +1,11 @@
+<%= simple_form_for(@studio) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :title, placeholder: "Joe's Woodwork Studio" %>
+  <%= f.input :adress, placeholder: "Brussels"%>
+  <%= f.input :price,  placeholder: "120€/month" %>
+  <%= f.input :description,  placeholder: "beautiful clear studio. Completely equiped. Shared with 3 collegues. Near the Canal" %>
+  <%= f.input :specific,  placeholder: "no smoking, no pets" %>
+
+  <%= f.button :submit %>
+<% end %>

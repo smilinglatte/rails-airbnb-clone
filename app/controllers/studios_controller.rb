@@ -10,11 +10,12 @@ class StudiosController < ApplicationController
   end
 
   def new
-
+    @studio = Studio.new
   end
 
   def create
-
+   @studio = Studio.new(studio_params)
+    @studio.save
   end
 
   def edit
@@ -30,11 +31,11 @@ class StudiosController < ApplicationController
   end
 
 
+private
 
-
-
-
-
+  def studio_params
+    params.require(:studio).permit(:title, )
+  end
 
 
 end
