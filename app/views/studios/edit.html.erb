@@ -1,0 +1,12 @@
+
+<%= simple_form_for(@studio) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :title  %>
+  <%= f.input :adress %>
+  <%= f.input :price   %>
+  <%= f.input :description    %>
+  <%= f.input :specific   %>
+
+   <%= f.button :submit %>
+ <% end %>

@@ -1,17 +1,24 @@
 <h1><%= @studio.title %></h1>
-<p> price</p>
-<h2><%= @studio.price %></h2>
+<h2> price</h2>
+<p><%= @studio.price %></p>
 
-<p> description</p>
+<h2> description</h2>
 <p><%= @studio.description %></p>
-<p>More info</p>
+<h2>More info</h2>
 <p><%= @studio.specific %></p>
 
 
 
 
-<p> address</p>
+<h2> address</h2>
 <p><%= @studio.adress %></p>
 
-<p> google maps</p>
+<h2> google maps</h2>
 <!-- google maps -->
+
+
+<!-- Button (call-to-action) -->
+
+<%= link_to "Edit", edit_studio_path(@studio), class: "btn btn-primary" %>
+
+<%= link_to "Delete", studio_path(@studio), class: "btn btn-secondary", method: :delete %>
