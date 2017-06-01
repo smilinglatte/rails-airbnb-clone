@@ -1,0 +1,11 @@
+<%= simple_form_for(@booking) do |f| %>
+  <%= f.error_notification %>
+
+
+  <%= f.input :studio_id, as: :hidden, input_html: { value: @studio.id } %>
+  <%= f.input :start_date %>
+  <%= f.input :end_date %>
+
+
+  <%= f.button :submit, "submit booking" %>
+<% end %>

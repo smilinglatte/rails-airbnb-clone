@@ -1,0 +1,15 @@
+<!-- currentuser -->
+
+<h1>BOOKINGS</h1>
+
+
+<ul>
+  <% @user_booking.each do |booking| %>
+    <li><%= booking.studio.title %></li>
+    <li><%= booking.start_date %></li>
+    <li><%= booking.end_date %></li>
+
+  <% end %>
+</ul>
+
+<%= link_to "Back to list", studios_path, class: "btn btn-succes" %>
