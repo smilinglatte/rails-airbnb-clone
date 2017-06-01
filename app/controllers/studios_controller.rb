@@ -16,6 +16,7 @@ class StudiosController < ApplicationController
   def create
     @studio = Studio.new(studio_params)
     @studio.user = current_user
+
     @studio.save
     if @studio.save
       redirect_to studio_path(@studio)
@@ -26,7 +27,7 @@ class StudiosController < ApplicationController
 
   def edit
     @studio = Studio.find(params[:id])
-        @studio.user = current_user
+    @studio.user = current_user
   end
 
   def update
