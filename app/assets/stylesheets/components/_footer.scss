@@ -1,0 +1,32 @@
+.footer {
+  background: #928F84;
+  padding: 5px 0;
+  color: #CCCCCC;
+ // position:absolute;
+  width:100%;
+  bottom:0px;
+}
+
+.footer p {
+  margin-top: 5px;
+}
+
+.footer ul {
+  margin-top: 5px;
+}
+
+.footer a
+{
+  color: #CCCCCC;
+  font-size: 20px;
+  letter-spacing: 10px;
+  transition: color 0.5s ease;
+}
+
+.footer a:hover{
+
+  text-decoration: none;
+  color: #DA6A50;
+}
+
+

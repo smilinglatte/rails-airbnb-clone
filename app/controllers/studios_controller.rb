@@ -47,7 +47,7 @@ class StudiosController < ApplicationController
 private
 
   def studio_params
-    params.require(:studio).permit(:title, :price, :description, :adress, :specific)
+    params.require(:studio).permit(:title, :price, :description, :adress, :specific, :photo, :photo_cache)
   end
 
   def render_error

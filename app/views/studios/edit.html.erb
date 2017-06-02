@@ -1,12 +1,22 @@
+<div class="container">
+ <div class = "well">
+  <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div style="min-height: 550px">
 
-<%= simple_form_for(@studio) do |f| %>
-  <%= f.error_notification %>
+          <%= simple_form_for(@studio) do |f| %>
+            <%= f.error_notification %>
 
-  <%= f.input :title  %>
-  <%= f.input :adress %>
-  <%= f.input :price   %>
-  <%= f.input :description    %>
-  <%= f.input :specific   %>
+            <%= f.input :title  %>
+            <%= f.input :adress %>
+            <%= f.input :price   %>
+            <%= f.input :description    %>
+            <%= f.input :specific   %>
 
-   <%= f.button :submit %>
- <% end %>
+             <%= f.button :submit %>
+           <% end %>
+        </div>
+      </div>
+    </div>
+ </div>
+</div>

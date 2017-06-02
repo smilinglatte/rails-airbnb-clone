@@ -1,10 +1,25 @@
-<h1>STUDIOS</h1>
+<div class="container">
 
-<ul>
-  <% @studios.each do |studio| %>
-    <li><%= link_to studio.title, studio_path(studio) %></li>
-     <li><%= link_to studio.adress, studio_path(studio) %></li>
-  <% end %>
-</ul>
+  <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div style="min-height: 550px">
 
 
+            <div>
+
+            <h1>STUDIOS</h1>
+
+              <ul class="list-unstyled">
+                <% @studios.each do |studio| %>
+                  <li><%= link_to studio.title, studio_path(studio) %>
+                   <%= link_to studio.adress, studio_path(studio) %></li>
+                <% end %>
+              </ul>
+
+            </div>
+
+       </div>
+      </div>
+
+ </div>
+</div>
